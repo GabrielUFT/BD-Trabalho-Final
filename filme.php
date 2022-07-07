@@ -7,10 +7,11 @@ include_once "./connection.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>Filmes</h1>
+    <div class="Fbarra"><h1 class="TituloFilme">Filmes</h1></div> <br> <br>
     <?php
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -21,15 +22,15 @@ include_once "./connection.php";
     }
     ?>
     <form name="cad-filmes" method="POST" action="">
-        <label>Diretor: </label>
-        <input type="text" name="diretor" id="diretor" placeholder="identificação do Diretor"> <br> <br>
-        <label>Prota 1: </label>
-        <input type="text" name="prota1" id="prota2" placeholder="Primeiro Protagonista"> <br> <br>
-        <label>Prota 2: </label>
-        <input type="text" name="prota2" id="prota2" placeholder="Segundo Protagonista"> <br> <br>
-        <label>Titulo: </label>
-        <input type="text" name="titulo" id="titulo" placeholder="Titulo do Filme"> <br> <br>
-        <input type="submit" value="Cadastrar" name="CadUsuario">
+        <label class="names">Identificação do diretor </label>
+        <input  type="text" name="diretor" id="diretor" placeholder="Identificação do Diretor" class="inputs">
+        <label class="names">Identificação do primeiro protagonista </label>
+        <input type="text" name="prota1" id="prota1" placeholder="Primeiro Protagonista" class="inputs"> 
+        <label class="names">Identificação do segundo protagonista </label>
+        <input type="text" name="prota2" id="prota2" placeholder="Segundo Protagonista" class="inputs"> 
+        <label class="names">Titulo do filmes </label>
+        <input type="text" name="titulo" id="titulo" placeholder="Titulo do Filme" class="inputs"> 
+        <input type="submit" value="Cadastrar" name="CadUsuario" class="btn">
 
         
         

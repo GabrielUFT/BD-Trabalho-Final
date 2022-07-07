@@ -7,29 +7,28 @@ include_once "./connection.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>Filmes</h1>
+    <h1 class="Fbarra">Elenco</h1>
     <?php
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
     if(!empty($dados['CadUsuario'])){
         var_dump($dados);
-        $query_filme =  "INSERT INTO filme (diretor, prota1, prota2, titulo) VALUES ('" . $dados['diretor']."', '" . $dados['prota1']."', '" . $dados['prota2']."', '" . $dados['titulo']."') ";
-        $cad_filme = pg_query($conn, $query_filme) or die('Query failed: ' . pg_last_error()); 
+        $query_elenco =  "INSERT INTO atua_em (ator,papel,filme) VALUES ('" . $dados['ator']."', '" . $dados['papel']."', '" . $dados['filme']."') ";
+        $cad_elenco = pg_query($conn, $query_elenco) or die('Query failed: ' . pg_last_error()); 
     }
     ?>
-    <form name="cad-filmes" method="POST" action="">
-        <label>Diretor: </label>
-        <input type="text" name="diretor" id="diretor" placeholder="identificação do Diretor"> <br> <br>
-        <label>Prota 1: </label>
-        <input type="text" name="prota1" id="prota2" placeholder="Primeiro Protagonista"> <br> <br>
-        <label>Prota 2: </label>
-        <input type="text" name="prota2" id="prota2" placeholder="Segundo Protagonista"> <br> <br>
-        <label>Titulo: </label>
-        <input type="text" name="titulo" id="titulo" placeholder="Titulo do Filme"> <br> <br>
-        <input type="submit" value="Cadastrar" name="CadUsuario">
+    <form name="cad-elencos" method="POST" action="">
+        <label class="names">Papel: </label>
+        <input type="text" name="papel" id="papel" placeholder="Nome do personagem" class="inputs"> 
+        <label class="names">Ator: </label>
+        <input type="text" name="ator" id="ator" placeholder="Identificação do ator" class="inputs"> 
+        <label class="names">Filme: </label>
+        <input type="text" name="filme" id="filme" placeholder="Identificação do filme" class="inputs"> 
+        <input type="submit" value="Cadastrar" name="CadUsuario" class="btn">
 
         
         

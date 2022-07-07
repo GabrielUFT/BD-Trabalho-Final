@@ -15,6 +15,4 @@ $conn_string = "host=$servidor port=$port dbname=$dbname user=$usuario password=
 $conn = pg_connect($conn_string) or
 die ("Não foi possível conectar ao servidor PostGreSQL");
 
-echo "Conexão efetuada com sucesso!!";
-
 ?>

@@ -1,0 +1,128 @@
+@charset "UFT-8";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+.Fbarra {
+    color: white;
+    background-color: #120632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+    font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+.Ititulo {
+    color: white;
+    font-family: sans-serif;
+}
+
+#IItitulo {
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(60, 16, 102);
+    font-family: sans-serif;
+    color: white;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    background-color:rgb(132, 28, 230);
+    font-family: sans-serif;
+    border-radius: 40px;
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+}
+
+#dst {
+    display: flex;
+    justify-content: center;
+
+}
+
+.TituloFilme {
+    color: white;
+    font-family: sans-serif;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+	width: 40%;
+	margin: 0 auto;
+	padding: 10px;
+    background-color: #120632;
+	border: none;
+    font-family: sans-serif;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 40%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+    font-family: sans-serif;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 10px;
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	background: linear-gradient(to right, orangered, orange);
+	cursor: pointer;
+}
+
+.inputs::placeholder {
+    border: solid;
+  
+    
+}
