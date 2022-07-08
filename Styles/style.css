@@ -61,10 +61,21 @@ div {
     margin: 10px;
 }
 
-#dst {
+#input {
     display: flex;
     justify-content: center;
+    align-items: center;
 
+}
+
+#query {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    height: 50px;
 }
 
 .TituloFilme {
